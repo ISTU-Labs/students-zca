@@ -1,5 +1,5 @@
-from components import Student, Group
-from interfaces import IGroup, IStudent
+from components import Student, Group, Faculty
+from interfaces import IGroup, IStudent, IFaculty
 # nose - Библиотека и инструментарий тестирования.
 from nose.tools import raises
 
@@ -12,6 +12,7 @@ class TestBasics:
         self.student = Student('Черкашин Евгений', '123123')
         self.group = Group("Электронно-вычислительные машины-1992-2",
                       "ЭВМ-91-2")
+        self.faculy = Faculty("Вычислительной техники", "ВТ")
 
     def test_student_class_implements(self):
         assert IStudent.implementedBy(Student)

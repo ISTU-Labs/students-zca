@@ -1,4 +1,4 @@
-from interfaces import IStudent, IGroup
+from interfaces import IStudent, IGroup, IFaculty
 from zope.interface import implementer
 
 class NamedEncodedThing(object):
@@ -43,10 +43,14 @@ class Student(NamedEncodedThing):
     def add_to_group(self, group):
         self.group=group
 
-
+@implementer(IFaculty)
 class Faculty(NamedEncodedThingWithAListOfThings):
     def add_group(self, group):
-        pass
+        self._add_thing(group, IFaculty)
+
+    def print_list(self):
+        for group in self.things:
+            print(group)
 
 
 

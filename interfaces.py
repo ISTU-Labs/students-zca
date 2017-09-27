@@ -32,3 +32,12 @@ class IGroup(Interface):
         group
 
     """
+
+class IFaculty(Interface):
+    def add_group(group):
+        """Adds a group to the faculty."""
+
+    def print_groups():
+        """Print list of groups."""
+
+
