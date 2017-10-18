@@ -1,9 +1,14 @@
-from zope.interface import Interface
+from zope.interface import Interface, Attribute
 
 class IStudent(Interface):
     """
     Интерфейс компонент, представляющих студентов
     """
+
+    name = Attribute("Имя студента")
+    code = Attribute("Номер зачетки")
+    group = Attribute("Группа, к которой приписан студент или None")
+
     def add_to_group(group):
         """Добавляет студента в группу
         """
@@ -39,5 +44,6 @@ class IFaculty(Interface):
 
     def print_groups():
         """Print list of groups."""
+
 
 

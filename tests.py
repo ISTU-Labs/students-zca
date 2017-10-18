@@ -2,6 +2,8 @@ from components import Student, Group, Faculty
 from interfaces import IGroup, IStudent, IFaculty
 # nose - Библиотека и инструментарий тестирования.
 from nose.tools import raises
+from storage.components import SQLiteStorage
+
 
 # implement - реализовать (классам)
 # provide - (обеспечивать, оснащать, обслуживать) (экз. класса).
@@ -12,7 +14,7 @@ class TestBasics:
         self.student = Student('Черкашин Евгений', '123123')
         self.group = Group("Электронно-вычислительные машины-1992-2",
                       "ЭВМ-91-2")
-        self.faculy = Faculty("Вычислительной техники", "ВТ")
+        self.faculy = Faculty("Институт высоких технологий", "ИВТ")
 
     def test_student_class_implements(self):
         assert IStudent.implementedBy(Student)
@@ -36,3 +38,12 @@ class TestBasics:
                 pass
 
         self.group.add_student(Cat("Butsy"))
+
+
+class TestSQLiteStuff:
+    def setUp(self):
+        self.storage = SQLiteStorage("TestDB.sqlite3")
+        self.student = Student('Черкашин Евгений', '123123')
+
+    def test_store_student(self):
+        self.storage.store(self.student)

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>12</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>828</x>
-      <y>372</y>
-      <w>240</w>
-      <h>120</h>
+      <x>945</x>
+      <y>405</y>
+      <w>180</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>symbol=component
 Student</panel_attributes>
@@ -16,10 +16,10 @@ Student</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>684</x>
-      <y>384</y>
-      <w>168</w>
-      <h>48</h>
+      <x>837</x>
+      <y>414</y>
+      <w>126</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=()-
 </panel_attributes>
@@ -28,10 +28,10 @@ Student</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>600</x>
-      <y>384</y>
-      <w>192</w>
-      <h>144</h>
+      <x>774</x>
+      <y>414</y>
+      <w>144</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>IStudent
 --
@@ -43,10 +43,10 @@ Student</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>336</x>
-      <y>372</y>
-      <w>228</w>
-      <h>120</h>
+      <x>576</x>
+      <y>405</y>
+      <w>171</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>symbol=component
 Group</panel_attributes>
@@ -55,21 +55,10 @@ Group</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>396</y>
-      <w>156</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>216</x>
-      <y>396</y>
-      <w>144</w>
-      <h>36</h>
+      <x>486</x>
+      <y>423</y>
+      <w>108</w>
+      <h>27</h>
     </coordinates>
     <panel_attributes>lt=()-</panel_attributes>
     <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
@@ -77,14 +66,211 @@ Group</panel_attributes>
   <element>
     <id>UMLInterface</id>
     <coordinates>
-      <x>132</x>
-      <y>384</y>
-      <w>192</w>
-      <h>108</h>
+      <x>423</x>
+      <y>414</y>
+      <w>144</w>
+      <h>81</h>
     </coordinates>
     <panel_attributes>IGroup
 --
 +add_student(student)</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>738</x>
+      <y>414</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>567</x>
+      <y>153</y>
+      <w>180</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+TestBasic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>198</y>
+      <w>27</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>198</y>
+      <w>324</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>340.0;230.0;340.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>198</y>
+      <w>117</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;250.0;10.0;100.0;110.0;100.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>198</y>
+      <w>207</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>210.0;250.0;210.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>207</x>
+      <y>405</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+Faculty</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>414</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>63</x>
+      <y>432</y>
+      <w>126</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>IFaculty
+--
++add_group(group)
++print_groups()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>117</x>
+      <y>441</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=()-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>117</x>
+      <y>171</y>
+      <w>468</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;300.0;10.0;10.0;500.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>576</x>
+      <y>648</y>
+      <w>171</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>symbol=component
+SQLiteStorage</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>432</x>
+      <y>666</y>
+      <w>90</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>IStorage
+--
++id store(obj)
++obj get(id)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>675</y>
+      <w>126</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=()-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>486</y>
+      <w>198</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>190.0;220.0;10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>486</y>
+      <w>396</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>190.0;220.0;10.0;220.0;10.0;100.0;420.0;100.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>486</y>
+      <w>774</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>lt=)-</panel_attributes>
+    <additional_attributes>190.0;220.0;10.0;220.0;10.0;100.0;840.0;100.0;840.0;10.0</additional_attributes>
   </element>
 </diagram>
