@@ -19,3 +19,6 @@ class ISQLiteStorageAdapter:
         """Stores self in the storage.
         Return an indentifier of the stored object.
         """
+    def get(storage, id):
+        """Constructs object from stored data identified
+        by id"""
